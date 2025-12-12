@@ -114,6 +114,7 @@ ORDER BY
 ```
 
 **Result**
+
 ![Output 2](Q2-Result.png)
 
 **Explanation**
