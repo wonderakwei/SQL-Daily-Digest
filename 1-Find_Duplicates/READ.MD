@@ -1,4 +1,3 @@
-This is the updated, corrected documentation for Day 1, incorporating the fix for Query 2 using the Common Table Expression (CTE).
 
 ---
 
