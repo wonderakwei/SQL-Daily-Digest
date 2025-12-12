@@ -69,12 +69,9 @@ HAVING
     COUNT(*) > 1;
 ```
 
-**Result** (Conceptual)
+**Result**
 
-| fname |   city   | occurrence_count |
-| :---: | :------: | :--------------: |
-| Alice | New York |        2         |
-|  Bob  |  London  |        2         |
+![Output 1](Q1-result.png)
 
 **Explanation**
 
@@ -116,14 +113,8 @@ ORDER BY
     fname, city, rn;
 ```
 
-**Result** (Conceptual)
-
-| rn  | fname |   city   |          email          | duplicate_group_count |
-| :-: | :---: | :------: | :---------------------: | :-------------------: |
-|  1  | Alice | New York |  alice.ny@example.com   |           2           |
-|  4  | Alice | New York |  alice.ny@example.com   |           2           |
-|  2  |  Bob  |  London  | bob.london@example.com  |           2           |
-|  5  |  Bob  |  London  | bob.london2@example.com |           2           |
+**Result**
+![Output 2](Q2-Result.png)
 
 **Explanation**
 
