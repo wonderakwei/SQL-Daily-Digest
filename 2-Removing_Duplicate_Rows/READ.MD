@@ -65,7 +65,7 @@ WHERE
     row_num > 1;
 ```
 
-**Result** (Conceptual: These are the rows marked for deletion)
+**Result** (These are the rows marked for deletion)
 
 | rn | fname | city | row\_num |
 | :---: | :---: | :---: | :---: |
@@ -107,7 +107,7 @@ WHERE
 SELECT * FROM customer;
 ```
 
-**Result** (Conceptual: Before/After)
+**Result**
 
 | rn (Original) | fname | city | email |
 | :---: | :---: | :---: | :---: |
