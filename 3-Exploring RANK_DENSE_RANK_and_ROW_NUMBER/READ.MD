@@ -7,7 +7,7 @@
 We'll create an `employee_scores` table designed to generate ties, which is essential for understanding the differences between the three ranking functions.
 
 ```sql
--- Re-create the table for Day 3 practice
+--create the table for Day 3 practice
 DROP TABLE IF EXISTS employee_scores;
 
 CREATE TABLE employee_scores (
@@ -33,6 +33,7 @@ INSERT INTO employee_scores (department, score, hire_date) VALUES
 -- Check initial data
 SELECT * FROM employee_scores ORDER BY department, score DESC;
 ```
+![initial query](table.png)
 
 #### 2️⃣ Problem Documentation
 
@@ -65,20 +66,9 @@ ORDER BY
     department, score DESC, hire_date;
 ```
 
-**Result** (Conceptual: Focus on the ranks for the tie-breakers)
+**Result** (Focus on the ranks for the tie-breakers)
 
-| employee_id | department | score | rn  | rnk | dense_rnk |
-| :---------: | :--------: | :---: | :-: | :-: | :-------: |
-|      1      |     HR     |  75   |  1  |  1  |     1     |
-|      2      |     HR     |  75   |  2  |  1  |     1     |
-|      3      |     HR     |  65   |  3  |  3  |     2     |
-|      4      | Marketing  |  88   |  1  |  1  |     1     |
-|      5      | Marketing  |  88   |  2  |  1  |     1     |
-|      6      | Marketing  |  80   |  3  |  3  |     2     |
-|      7      |   Sales    |  95   |  1  |  1  |     1     |
-|      8      |   Sales    |  95   |  2  |  1  |     1     |
-|      9      |   Sales    |  92   |  3  |  3  |     2     |
-|     10      |   Sales    |  50   |  4  |  4  |     3     |
+![initial query](results_ranks.png)
 
 ### Analysis and Explanation
 
